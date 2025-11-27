@@ -64,6 +64,9 @@ total time 3 hours
 ![Add Task](https://raw.githubusercontent.com/sc16141/kodar-task/main/assets/images/add%20task%20screen.png)
 ![Add manager](https://raw.githubusercontent.com/sc16141/kodar-task/main/assets/images/home2.png)
 
+bonus task is also completed
+ios 
+
 
 
 
