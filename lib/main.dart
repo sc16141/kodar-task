@@ -10,7 +10,6 @@ import 'logic/bloc/task_event.dart';
 
 import 'logic/theme_cubit/theme_cubit.dart';
 
-// New Service Import
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,13 +25,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // Service ka instance banaya
   final QuickActionsService _quickActionsService = QuickActionsService();
 
   @override
   void initState() {
     super.initState();
-    // Logic ab alag file me hai, yahan bas call kiya
     _quickActionsService.init();
   }
 

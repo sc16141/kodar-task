@@ -5,12 +5,9 @@ class QuickActionsService {
   final QuickActions _quickActions = const QuickActions();
 
   void init() {
-    // 1. Setup Callback (Action handle karna)
     _quickActions.initialize((shortcutType) {
       if (shortcutType == 'add_task') {
-        // Thoda wait karein taaki app ready ho jaye
         Future.delayed(const Duration(milliseconds: 500), () {
-          // GoRouter ka use karke navigate karein
           AppRouter.router.push('/task');
         });
       }
@@ -21,7 +18,7 @@ class QuickActionsService {
       const ShortcutItem(
         type: 'add_task',
         localizedTitle: 'Add New Task',
-        icon: 'add', // Drawable folder wala icon name
+        icon: 'add',
       ),
     ]);
   }
